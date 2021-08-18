@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C942CB9E-43C8-4206-8885-54FD34CC8412}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDDL</RootNamespace>
+    <AssemblyName>enviLOGBasic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Setup\0.1\Bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AEA693E9D6C1A332514A3FADDC8D40F188BA669C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PDDL_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images\enviroserviceLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guifreaks.NavigationBar.XmlSerializers, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build\Guifreaks.NavigationBar.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Lib\Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Shell32, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Lib\Interop.Shell32.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\itextsharp.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Code Backup\enviLOG Basic\08-06-2021\PDDL\NavigationBarDemo\Lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Windows\assembly\GAC_MSIL\office\15.0.0.0__71e9bce111e9429c\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="PDDL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\PDDL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Sockets, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceCommunication.cs" />
+    <Compile Include="frmloading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloading.Designer.cs">
+      <DependentUpon>frmloading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FileLog.cs" />
+    <Compile Include="LicenseKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseKey.Designer.cs">
+      <DependentUpon>LicenseKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="local.cs" />
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDFWithLogo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadioBtn.Designer.cs">
+      <DependentUpon>RadioBtn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloading.resx">
+      <DependentUpon>frmloading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseKey.resx">
+      <DependentUpon>LicenseKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadioBtn.resx">
+      <DependentUpon>RadioBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="PDDL_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\colorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\klipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSmall\colorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSmall\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSmall\klipper_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSmall\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Guifreaks.Common\Guifreaks.Common.csproj">
+      <Project>{66F864B6-34D3-4AF0-93A7-BB3731360E17}</Project>
+      <Name>Guifreaks.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guifreaks.NavigationBar\Guifreaks.NavigationBar.csproj">
+      <Project>{C5642C22-A09F-42C5-AF8C-60197EB89BBB}</Project>
+      <Name>Guifreaks.NavigationBar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSmall\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\charticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\zoomin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\measurement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\limitarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="enviroserviceLogo.ico" />
+    <Content Include="images\11.png" />
+    <Content Include="images\3floppy_unmount.png" />
+    <Content Include="images\Background 2.jpg" />
+    <Content Include="images\Background.jpg" />
+    <Content Include="images\batSaveIcon.png" />
+    <Content Include="images\bell.png" />
+    <Content Include="images\bellicon.png" />
+    <Content Include="images\bestview.png" />
+    <Content Include="images\bestview1.png" />
+    <Content Include="images\bg1.jpeg" />
+    <Content Include="images\bg2.png" />
+    <Content Include="images\BrowseN.png" />
+    <Content Include="images\btn1.png" />
+    <Content Include="images\btn2.png" />
+    <Content Include="images\btn3.png" />
+    <Content Include="images\button.png" />
+    <Content Include="images\button1.jpg" />
+    <Content Include="images\buttonN.png" />
+    <Content Include="images\Capture.PNG" />
+    <Content Include="images\CompIcon.png" />
+    <Content Include="images\download.png" />
+    <Content Include="images\Envilog.png" />
+    <Content Include="images\enviroserviceLogo.ico" />
+    <Content Include="images\enviro_logo.jpg" />
+    <Content Include="images\Excel-icon11.png" />
+    <Content Include="images\Folder Open.png" />
+    <Content Include="images\Folder-Settings-Tools-icon.png" />
+    <Content Include="images\Home.png" />
+    <Content Include="images\Home1.png" />
+    <Content Include="images\limitarrow1.png" />
+    <Content Include="images\limits1.png" />
+    <Content Include="images\Logg.png" />
+    <Content Include="images\LogIcon.png" />
+    <Content Include="images\LogIcon1.png" />
+    <Content Include="images\measureicon.png" />
+    <Content Include="images\pan.png" />
+    <Content Include="images\pan1.png" />
+    <Content Include="images\pan2.png" />
+    <Content Include="images\PDF-icon1.png" />
+    <Content Include="images\Pharma clean room.jpg" />
+    <Content Include="images\Pharma clean room11.jpg" />
+    <Content Include="images\Program logger.png" />
+    <Content Include="images\Program loggerN.png" />
+    <Content Include="images\program.png" />
+    <Content Include="images\Read Data.png" />
+    <Content Include="images\Read DataN.png" />
+    <Content Include="images\readdata.png" />
+    <Content Include="images\Refresh buttonN.png" />
+    <Content Include="images\Search Logger.png" />
+    <Content Include="images\Search_Logger.png" />
+    <Content Include="images\select.png" />
+    <Content Include="images\showchart.png" />
+    <Content Include="images\showtabdata.png" />
+    <Content Include="images\softback.png" />
+    <Content Include="images\SoftLay1.png" />
+    <Content Include="images\SoftLay2.png" />
+    <Content Include="images\SoftLay3.jpg" />
+    <Content Include="images\Software layout 830x650.jpg" />
+    <Content Include="images\Software layout 830x750.jpg" />
+    <Content Include="images\Software layout 980x891.jpg" />
+    <Content Include="images\Software layout.jpg" />
+    <Content Include="images\SubmitN.png" />
+    <Content Include="images\zoomindata.png" />
+    <Content Include="images\zoomoutdata.png" />
+    <Content Include="Lib\Interop.IWshRuntimeLibrary.dll" />
+    <Content Include="Lib\Interop.Shell32.dll" />
+    <Content Include="Lib\itextsharp.dll" />
+    <Content Include="Lib\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Lib\PDDL.Common.dll" />
+    <Content Include="Lib\SautinSoft.PdfFocus.dll" />
+    <Content Include="Lib\System.dll" />
+    <Content Include="Lib\System.IO.dll" />
+    <Content Include="Lib\System.Linq.Dynamic.dll" />
+    <Content Include="Lib\System.Net.dll" />
+    <Content Include="Lib\System.Net.Sockets.dll" />
+    <Content Include="Lib\System.Xml.Linq.dll" />
+    <Content Include="Lib\Windows.Devices.Usb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\ZedGraph.dll" />
+    <None Include="Resources\Search_Logger.png" />
+    <None Include="Resources\btn2.png" />
+    <None Include="Resources\Folder-Settings-Tools-icon.png" />
+    <None Include="Resources\Excel-icon11.png" />
+    <None Include="Resources\11.png" />
+    <Content Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\LoggIcon.png" />
+    <None Include="Resources\Logg.png" />
+    <None Include="Resources\Pharma clean room11.jpg" />
+    <None Include="Resources\PDF-icon1.png" />
+    <None Include="Resources\Envilog.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\limitarrow1.png" />
+    <None Include="Resources\bestview1.png" />
+    <None Include="Resources\pan2.png" />
+    <None Include="Resources\limits1.png" />
+    <None Include="Resources\limits.png" />
+    <None Include="Resources\bestview.png" />
+    <None Include="Resources\pan1.png" />
+    <None Include="Resources\pan.png" />
+    <None Include="Resources\readdata2.png" />
+    <None Include="Resources\readdata1.png" />
+    <None Include="Resources\readdata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
